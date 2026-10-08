@@ -98,7 +98,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          expected='3fdc07a2297421373607c098f9b847c1377d9266ee07003b9d7fda8c4b581d8a'
+          expected='e8207680a1cfdc7b512c2a892cbc0cb36b8b1e33014e4d521fbb531e0355b319'
           apksigner=$(find "${ANDROID_HOME}/build-tools" -name apksigner -type f 2>/dev/null | sort | tail -n1 || true)
           if [ -z "$apksigner" ]; then
             sdkmanager 'build-tools;35.0.0' >/dev/null
